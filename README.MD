@@ -43,25 +43,26 @@ Para executar este projeto no seu ambiente local, siga os passos abaixo:
 . Ter uma IDE Java como o IntelliJ IDEA ou Eclipse.
 
 - Clone o Repositório:
-'''git clone https://github.com/kenyamashida/sistema-supermercado-java.git'''
+```bash
+git clone https://github.com/kenyamashida/sistema-supermercado-java.git```
 
 - Configure o Banco de Dados:
 . Crie um usuário e um banco de dados no seu MySQL.
 . Execute os scripts localizados na pasta scripts_SQL na seguinte ordem:
-. '''DDL_CriarSupermercado.sql''': para criar toda a estrutura de tabelas.
-. '''DML_PopularSupermercado.sql''': para inserir dados de exemplo.
-. Abra o arquivo '''src/dao/ConexaoMySQL.java''' e atualize as credenciais USER e PASSWORD com as suas.
+. `DDL_CriarSupermercado.sql`: para criar toda a estrutura de tabelas.
+. `DML_PopularSupermercado.sql`: para inserir dados de exemplo.
+. Abra o arquivo `src/dao/ConexaoMySQL.java` e atualize as credenciais USER e PASSWORD com as suas.
 
 - Configure a IDE (IntelliJ IDEA):
 . Abra o projeto na IDE.
-. Adicione o arquivo .jar do MySQL Connector/J (https://dev.mysql.com/downloads/connector/j/) às bibliotecas do projeto (File > Project Structure > Libraries).
+. Adicione o arquivo .jar do MySQL Connector/J (https://dev.mysql.com/downloads/connector/j/) às bibliotecas do projeto (`File > Project Structure > Libraries`).
 . Localize a classe Main.java (ou view/TelaVenda.java), clique com o botão direito e selecione Run.
 
 🏛️ Arquitetura
 O projeto segue uma arquitetura em 3 camadas para separar as responsabilidades:
 - Model: Classes que representam as entidades de negócio (ex: Produto, Venda). Não contêm lógica de acesso a dados ou de interface.
-- View: Classes que constroem a interface gráfica (ex: TelaVenda, TelaRelatorios). São responsáveis pela interação com o utilizador.
-- DAO (Data Access Object): Classes que encapsulam a comunicação com o banco de dados (ex: ProdutoDAO, VendaDAO).
+- View: Classes que constroem a interface gráfica (ex: `TelaVenda`, `TelaRelatorios`). São responsáveis pela interação com o utilizador.
+- DAO (Data Access Object): Classes que encapsulam a comunicação com o banco de dados (ex: `ProdutoDAO`, `VendaDAO`).
 
 
 📖 Metodologia e Referências
