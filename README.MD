@@ -1,0 +1,112 @@
+Sistema de Ponto de Venda (PDV) para Supermercado
+📝 Descrição do Projeto
+Este projeto é um sistema de gestão para supermercados desenvolvido em Java, com foco nos princípios de Programação Orientada a Objetos (POO). Ele oferece uma solução de Ponto de Venda (PDV) funcional, com gestão de estoque e geração de relatórios gerenciais, utilizando uma interface gráfica construída com Java Swing e um banco de dados MySQL para persistência de dados.
+
+Este projeto foi desenvolvido como um portfólio para demonstrar habilidades em desenvolvimento de software desktop, arquitetura em camadas e integração com bancos de dados.
+
+🎓 Contexto Acadêmico
+Este sistema foi originalmente desenvolvido como um projeto acadêmico para a disciplina de Programação Orientada a Objetos, ministrada pelo professor Norton Glasser, no curso de Análise e Desenvolvimento de Sistemas da FATEC Ipiranga.
+
+O objetivo era aplicar os conceitos de POO na construção de uma aplicação desktop completa e funcional.
+
+✨ Funcionalidades Principais
+O sistema está organizado em módulos e oferece as seguintes funcionalidades:
+
+Ponto de Venda (PDV):
+
+Interface principal para registro de vendas.
+
+Busca de produtos por código de barras.
+
+Cálculo automático do total da compra.
+
+Seleção de formas de pagamento.
+
+Baixa automática do estoque ao finalizar a venda.
+
+Gestão de Estoque:
+
+Tela para cadastro de novos produtos.
+
+Tela para visualização de todo o estoque, com alertas de estoque baixo.
+
+Funcionalidade para ajuste manual da quantidade de produtos.
+
+Relatórios Gerenciais:
+
+Central de relatórios para visualização de dados estratégicos.
+
+Relatórios disponíveis: Vendas Diárias, Produtos Mais Vendidos, Estoque Baixo, Margem de Lucro e Fluxo de Caixa.
+
+🛠️ Tecnologias Utilizadas
+Linguagem: Java 17+
+
+Interface Gráfica: Java Swing
+
+Banco de Dados: MySQL 8.0+
+
+Conectividade: JDBC (MySQL Connector/J)
+
+IDE: IntelliJ IDEA
+
+🚀 Como Executar o Projeto
+Para executar este projeto no seu ambiente local, siga os passos abaixo:
+
+Pré-requisitos:
+
+Ter o Java JDK 17 ou superior instalado.
+
+Ter o [link suspeito removido] instalado e em execução.
+
+Ter uma IDE Java como o IntelliJ IDEA ou Eclipse.
+
+Clone o Repositório:
+
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+Configure o Banco de Dados:
+
+Crie um usuário e um banco de dados no seu MySQL (instruções detalhadas nos scripts).
+
+Execute o script mysql_schema_completo.sql para criar todas as tabelas.
+
+Execute o script mysql_populate_script.sql para inserir dados de exemplo.
+
+Abra o ficheiro src/dao/ConexaoMySQL.java e atualize as credenciais USER e PASSWORD com as suas.
+
+Configure a IDE (IntelliJ IDEA):
+
+Abra o projeto na IDE.
+
+Adicione o ficheiro .jar do MySQL Connector/J às bibliotecas do projeto (File > Project Structure > Libraries).
+
+Localize a classe Main.java (ou view/TelaVenda.java), clique com o botão direito e selecione Run.
+
+🏛️ Arquitetura
+O projeto segue uma arquitetura em 3 camadas para separar as responsabilidades:
+
+Model: Classes que representam as entidades de negócio (ex: Produto, Venda). Não contêm lógica de acesso a dados ou de interface.
+
+View: Classes que constroem a interface gráfica (ex: TelaVenda, TelaRelatorios). São responsáveis pela interação com o utilizador.
+
+DAO (Data Access Object): Classes que encapsulam a comunicação com o banco de dados (ex: ProdutoDAO, VendaDAO).
+
+(Você pode adicionar aqui os seus diagramas UML e MER como imagens para deixar o README ainda mais completo!)
+
+📖 Metodologia e Referências
+Ferramenta de IA Assistiva no Desenvolvimento
+Parte do desenvolvimento deste projeto contou com o auxílio de um modelo de linguagem ampla (LLM) como ferramenta de programação em par (pair programming). A ferramenta foi utilizada para as seguintes finalidades metodológicas:
+
+Geração de Código Estrutural (Boilerplate): Criação de classes, métodos e estruturas de repetição com base em especificações.
+
+Refatoração e Otimização: Sugestão de melhorias na legibilidade e estrutura do código.
+
+Depuração (Debugging): Análise de erros de compilação e execução para identificar causas prováveis e sugerir correções.
+
+Documentação Técnica: Geração de comentários no padrão Javadoc e elaboração de diagramas UML/MER em sintaxe Mermaid.
+
+A lógica de negócio, a arquitetura principal e a validação final de todo o código e documentação foram de responsabilidade do desenvolvedor.
+
+Referência:
+
+Google. (2024). Gemini (Modelo de Linguagem Ampla). Acessado em Julho de 2024, de https://gemini.google.com
