@@ -44,7 +44,8 @@ Para executar este projeto no seu ambiente local, siga os passos abaixo:
 
 - Clone o Repositório:
 ```bash
-git clone https://github.com/kenyamashida/sistema-supermercado-java.git```
+git clone https://github.com/kenyamashida/sistema-supermercado-java.git 
+```
 
 - Configure o Banco de Dados:
 . Crie um usuário e um banco de dados no seu MySQL.
