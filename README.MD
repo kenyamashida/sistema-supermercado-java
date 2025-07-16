@@ -37,23 +37,24 @@ IDE: IntelliJ IDEA
 🚀 Como Executar o Projeto
 Para executar este projeto no seu ambiente local, siga os passos abaixo:
 
-Pré-requisitos:
+- Pré-requisitos:
+. Ter o Java JDK 17 ou superior instalado.
+. Ter o MySQL instalado e em execução.
+. Ter uma IDE Java como o IntelliJ IDEA ou Eclipse.
 
-Ter o Java JDK 17 ou superior instalado.
-Ter o MySQL instalado e em execução.
-Ter uma IDE Java como o IntelliJ IDEA ou Eclipse.
+- Clone o Repositório:
+'''git clone https://github.com/kenyamashida/sistema-supermercado-java.git'''
 
-Clone o Repositório:
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+- Configure o Banco de Dados:
+. Crie um usuário e um banco de dados no seu MySQL.
+. Execute os scripts localizados na pasta scripts_SQL na seguinte ordem:
+. '''DDL_CriarSupermercado.sql''': para criar toda a estrutura de tabelas.
+. '''DML_PopularSupermercado.sql''': para inserir dados de exemplo.
+. Abra o arquivo '''src/dao/ConexaoMySQL.java''' e atualize as credenciais USER e PASSWORD com as suas.
 
-Configure o Banco de Dados:
-. Crie um usuário e um banco de dados no seu MySQL (instruções detalhadas nos scripts).
-. Execute o script mysql_schema_completo.sql para criar todas as tabelas.
-. Execute o script mysql_populate_script.sql para inserir dados de exemplo.
-. Abra o ficheiro src/dao/ConexaoMySQL.java e atualize as credenciais USER e PASSWORD com as suas.
-. Configure a IDE (IntelliJ IDEA):
+- Configure a IDE (IntelliJ IDEA):
 . Abra o projeto na IDE.
-. Adicione o ficheiro .jar do MySQL Connector/J às bibliotecas do projeto (File > Project Structure > Libraries).
+. Adicione o arquivo .jar do MySQL Connector/J (https://dev.mysql.com/downloads/connector/j/) às bibliotecas do projeto (File > Project Structure > Libraries).
 . Localize a classe Main.java (ou view/TelaVenda.java), clique com o botão direito e selecione Run.
 
 🏛️ Arquitetura
@@ -71,5 +72,4 @@ Parte do desenvolvimento deste projeto contou com o auxílio de um modelo de lin
 . A lógica de negócio, a arquitetura principal e a validação final de todo o código e documentação foram de responsabilidade do desenvolvedor.
 
 Referência:
-
-Google. (2024). Gemini (Modelo de Linguagem Ampla). Acessado em Julho de 2024, de https://gemini.google.com
+. Google. (2024). Gemini (Modelo de Linguagem Ampla). Acessado em Julho de 2024, de https://gemini.google.com
