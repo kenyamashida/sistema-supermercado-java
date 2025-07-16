@@ -49,7 +49,7 @@ git clone https://github.com/kenyamashida/sistema-supermercado-java.git
 
 - Configure o Banco de Dados:
 . Crie um usuário e um banco de dados no seu MySQL.
-. Execute os scripts localizados na pasta scripts_SQL na seguinte ordem:
+. Execute os scripts localizados na pasta scripts_SQL (https://github.com/kenyamashida/sistema-supermercado-java/tree/main/scipts_SQL) na seguinte ordem:
 . `DDL_CriarSupermercado.sql`: para criar toda a estrutura de tabelas.
 . `DML_PopularSupermercado.sql`: para inserir dados de exemplo.
 . Abra o arquivo `src/dao/ConexaoMySQL.java` e atualize as credenciais USER e PASSWORD com as suas.
